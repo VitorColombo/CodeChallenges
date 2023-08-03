@@ -1,0 +1,78 @@
+/* styles.css */
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: hsl(212, 45%, 89%);
+  color: hsl(218, 44%, 22%);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+.content {
+  background-color: #f0f0f0; 
+  padding: 15px; 
+  max-width: 300px; 
+  margin: 40px; 
+  border-radius: 20px;
+}
+
+.content img {
+  display: block; /* Ensure the image is a block element (takes full width) */
+  margin: 0 auto; /* Center the image horizontally within the box */
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+  border-radius: 10px; /* Optionally, add rounded borders to the image */
+}
+.content h1, h2, h3 {
+  margin: 15px;
+}
+
+.attribution {
+  font-size: 10px;
+  text-align: center;
+  position: fixed; 
+  bottom: 0;
+  left: 0; 
+  right: 0; 
+  padding: 10px;
+}
+
+h2 {
+  font-family: 'Outfit-Bold', sans-serif;	
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(220, 15%, 55%);
+  text-align: center;
+}
+/* Import the Outfit font */
+@font-face {
+  font-family: 'Outfit';
+  src: url('fonts/Outfit-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Outfit-Bold';
+  src: url('fonts/Outfit-Bold.ttf') format('truetype');
+  font-weight: 400;
+}
+
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
