@@ -1,41 +1,52 @@
-body, ul {
-    margin: 0;
-    padding: 0;
-}
 
 body {
+    margin: 0;
+    padding: 0;
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #B4CDED;
+    font-family: 'Outfit', sans-serif;
 }
 
-h1 {
-    text-align: center;
+.content{
+    margin-top: 0;
     margin-bottom: 20px;
-    font-size: 24px;
+    text-align: center;
+    font-size: 20px;
+    color: #0D1821;
 }
 
-ul {
+.lista-links {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-li {
-    margin-bottom: 10px;
-}
-
-a {
-    display: block;
-    padding: 10px;
+.lista-links li a {
+    display: flex;
+    padding: 15px;
+    margin: 15px;
+    color: #F0F4EF;
+    border-radius: 15px;
+    background-color: #344966;
+    transition:  0.4s;
     text-decoration: none;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #fff;
-    transition: background-color 0.2s;
 }
 
-a:hover {
-    background-color: #f0f0f0;
+.lista-links li a:hover {
+    background-color: #dadbdc;
+    color: hsl(218, 44%, 22%);
 }
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('Outfit-VariableFont_wght.ttf') format('truetype'); /* Adjust the font file name and format if needed */
+}
+
+- White: hsl(0, 0%, 100%)
+- Light gray: hsl(212, 45%, 89%)
+- Grayish blue: hsl(220, 15%, 55%)
+- Dark blue: hsl(218, 44%, 22%)
