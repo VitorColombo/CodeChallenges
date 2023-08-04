@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
 }
+
 section{
     display: flex;
     justify-content: center;
@@ -13,7 +14,7 @@ section{
 }
   
 body {
-   background-color: #222;
+   background-color: #333333;
    position: absolute;
    inset: 0;
    display: flex;
@@ -37,7 +38,7 @@ body {
 }
 h2{
     font-size: 2em;
-    color: #fff;
+    color: aqua;
     text-align: center;
 }
 .inputbox{
@@ -83,9 +84,6 @@ top: -5px;
     margin: -15px 0 15px ;
     font-size: .7em;
     color: #fff;
-    display: flex;
-    text-allign: center;
-    justify-content: left;  
 }
 
 .forget label input{
@@ -94,12 +92,35 @@ top: -5px;
 }
 .forget label a{
     color: #fff;
-    text-decoration: none;
-    justify-content: left; 
+    text-decoration: none; 
+    justify-content: right;
 }
 .forget label a:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    color: aqua;
+    transition: 0.3s;
 }
+.forget input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background-color: aqua;
+    border: 1px solid #222;
+    border-radius: 3px;
+}
+.forget input[type="checkbox"]:checked {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 1px solid #222;
+    border-radius: 3px;
+}
+.forget input[type="checkbox"]:hover{
+    border-color: aqua;
+}
+
 button{
     width: 100%;
     height: 40px;
@@ -111,6 +132,11 @@ button{
     font-size: 1em;
     font-weight: 600;
 }
+button:hover{
+    background: #222;
+    color: aqua;
+    transition: 0.3s;
+}
 .register{
     font-size: .9em;
     color: #fff;
@@ -120,8 +146,10 @@ button{
 .register p a{
     text-decoration: none;
     color: #fff;
-    font-weight: 600;
+    font-weight: 550;
 }
 .register p a:hover{
-    text-decoration: underline;
+    text-decoration: none;
+    color: aqua;
+    transition: 0.3s;
 }
