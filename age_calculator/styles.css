@@ -1,0 +1,134 @@
+body{
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'PoppinsB', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    font-size: 62px;
+    font-family: "PoppinsB", sans-serif;
+    position: relative;
+    width: 450px;
+    height: 370px;
+    margin: 140px;
+    padding: 30px;
+    border-radius: 20px 20px 100px 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outputs{
+    padding-top: 0px;
+    margin-left: -130px;
+    align-items: left;
+    line-height: 20px;
+}
+
+.inputs {
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    position: relative;
+    margin-left: -100px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    bottom: 67%;
+    left: 0;
+    margin-left: 20px;
+    width: 80%;
+    height: 1.4px;
+    background-color: #ccc;
+  }
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    color: #333;
+    font-size: 12px;
+}
+
+.vars{
+    color:hsl(259, 100%, 65%) ;
+}
+
+.results{
+    font-family: 'PoppinsB', sans-serif;
+    font-size: 62px;
+}
+
+.attribution {
+    font-size: 10px;
+    text-align: center;
+    position: fixed; 
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    padding: 10px;
+  }
+
+.b1{
+    margin-left: 400px;
+    margin-bottom: -40px;
+}
+
+button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+    background-color: hsl(259, 100%, 65%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+input[type="text"] {
+    width: 90px;
+    padding-left: 10px;
+    margin-top: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "Poppins", sans;
+  }
+  
+.custom-input {
+    color: #333;
+    font-family: "PoppinsB", sans;
+
+  }
+  
+#my-input {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/age_calculator/assets/fonts/Poppins-Bold.ttf') format('truetype'); /* Adjust the font file name and format if needed */
+}
+
+@font-face {
+    font-family: 'PoppinsB';
+    src: url('/age_calculator/assets/fonts/Poppins-BoldItalic.ttf') format('truetype'); /* Adjust the font file name and format if needed */
+}

@@ -5,33 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+
   <title>Frontend Mentor | Age calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
+  <div class="container">
+    <div class="inputs"> 
+        <div class="input-group">
+            <label for="day">D A Y</label>
+            <input type="text" id="day" class="custom-input" placeholder="DD" required>
+        </div>
+        <div class="input-group">
+            <label for="month">M O N T H</label>
+            <input type="text" id="month" class="custom-input" placeholder="MM" required>
+        </div>
+        <div class="input-group">
+            <label for="year">Y E A R</label>
+            <input type="text" id="year" class="custom-input" placeholder="YYYY" required>
+        </div>
+    </div>
+    <button class = "b1" onclick="calculateAge()" >
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 46 44">
+        <g fill="none" stroke="#FFF" stroke-width="2">
+          <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+        </g>
+      </svg>
+    </button>
+    <div class="outputs">  
+      <p> <span id="yearsO" class="vars">- -</span>years</p>
+      <p> <span id="monthsO" class="vars">- -</span>months</p>
+      <p> <span id="daysO" class="vars">- -</span>days</p>
+    </div>
+  </div>  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Vitor Nunes</a>.
   </div>
 </body>
 </html>
