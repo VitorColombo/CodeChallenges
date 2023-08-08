@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
 
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -21,17 +20,20 @@
         <div class="input-group">
             <label for="day">D A Y</label>
             <input type="text" id="day" class="custom-input" placeholder="DD" required>
-        </div>
+            <span class="error-message" id="dayError"></span> 
+          </div>
         <div class="input-group">
             <label for="month">M O N T H</label>
             <input type="text" id="month" class="custom-input" placeholder="MM" required>
-        </div>
+            <span class="error-message" id="monthError"></span>
+          </div>
         <div class="input-group">
             <label for="year">Y E A R</label>
             <input type="text" id="year" class="custom-input" placeholder="YYYY" required>
+            <span class="error-message" id="yearError"></span> 
         </div>
     </div>
-    <button class = "b1" onclick="calculateAge()" >
+    <button class = "b1" onclick="calculateAge();" >
       <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 46 44">
         <g fill="none" stroke="#FFF" stroke-width="2">
           <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
@@ -48,5 +50,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Vitor Nunes</a>.
   </div>
+  <script src="script.js" defer></script>
+
 </body>
 </html>
