@@ -137,12 +137,12 @@ input[type="text"] {
  
 #my-input {
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: uppercase; 
   }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype'); /* Adjust the font file name and format if needed */
+    src: url('age_calculator\assets\fonts\Poppins-Bold.ttf') format('truetype'); /* Adjust the font file name and format if needed */
 }
 
 @font-face {
