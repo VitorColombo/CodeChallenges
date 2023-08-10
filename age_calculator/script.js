@@ -1,5 +1,4 @@
 
-
 function calculateAge() {
     document.getElementById("dayError").innerHTML = "";
     document.getElementById("monthError").innerHTML = "";
@@ -15,32 +14,73 @@ function calculateAge() {
         document.getElementById("dayError").innerHTML = "This field is required";
         document.getElementById("monthError").innerHTML = "This field is required";
         document.getElementById("yearError").innerHTML = "This field is required";
-        document.getElementById("day").classList.add("error"); // Add error class
-        document.getElementById("month").classList.add("error"); // Add error class
-        document.getElementById("year").classList.add("error"); // Add error class
+        document.getElementById("day").classList.add("error"); 
+        document.getElementById("month").classList.add("error"); 
+        document.getElementById("year").classList.add("error"); 
 
-        return; // Exit the function if there's an error
+        return; 
     }
     
-    if (!day) {
+    if (!day && !month) {
+        document.getElementById("day").classList.add("error"); 
         document.getElementById("dayError").innerHTML = "Day is required";
-        document.getElementById("day").classList.add("error"); // Add error class
+        document.getElementById("month").classList.add("error"); 
+        document.getElementById("monthError").innerHTML = "Month is required";
 
-        return; // Exit the function if there's an error
+        return;
+    }
+
+    if (!year && !month) {
+        document.getElementById("yearError").innerHTML = "Year is required";
+        document.getElementById("year").classList.add("error"); 
+        document.getElementById("monthError").innerHTML = "Month is required";
+        document.getElementById("month").classList.add("error"); 
+        return;
+    }
+
+    if (!day && !year) {
+        document.getElementById("yearError").innerHTML = "Year is required";
+        document.getElementById("year").classList.add("error"); 
+        document.getElementById("dayError").innerHTML = "Day is required";
+        document.getElementById("day").classList.add("error"); 
+        return;
     }
 
     if (!month) {
         document.getElementById("monthError").innerHTML = "Month is required";
-        document.getElementById("month").classList.add("error"); // Add error class
-        return; // Exit the function if there's an error
+        document.getElementById("month").classList.add("error"); 
+        return;
     }
 
     if (!year) {
         document.getElementById("yearError").innerHTML = "Year is required";
-        document.getElementById("year").classList.add("error"); // Add error class
-        return; // Exit the function if there's an error
+        document.getElementById("year").classList.add("error");
+        return; 
     }
 
+    if(year > getYear()){
+        document.getElementById("yearError").innerHTML = "Must be in the past";
+        document.getElementById("year").classList.add("error");
+        return;         
+    }
+
+    if(year < 1900){
+        document.getElementById("yearError").innerHTML = "Must be a valid year";
+        document.getElementById("year").classList.add("error");
+        return;         
+    }
+
+    if((day <= 0 || day >= 32)){
+        document.getElementById("dayError").innerHTML = "Must be a valid day";
+        document.getElementById("day").classList.add("error");
+        return;         
+    }
+
+    if ((month <= 0 || month >= 13)){
+        document.getElementById("monthError").innerHTML = "Must be a valid month";
+        document.getElementById("month").classList.add("error");
+        return;  
+    }
 
     let ageInMilliseconds = now - birth;
 
@@ -59,14 +99,18 @@ function calculateAge() {
     document.getElementById("yearsO").innerHTML = yearsOld;
     document.getElementById("monthsO").innerHTML = monthsOld;
     document.getElementById("daysO").innerHTML = daysOld;
+
+
+    document.getElementById("day").classList.remove("error");
+    document.getElementById("month").classList.remove("error");
+    document.getElementById("year").classList.remove("error");
+
 }
 
 function getYear() {
     const now = new Date();
     const year = now.getFullYear();
-  
-    // Dynamically set the max attribute for the year input element
-    document.getElementById("year").max = year;
+      document.getElementById("year").max = year;
     return year;
   }
   getYear();
