@@ -115,10 +115,18 @@ input[type="text"] {
 .custom-input {
     color: #333;
     font-family: "PoppinsB", sans;
-
+    transition: border-color 0.3s;
   }
 
-  .custom-input.error {
+.custom-input:hover{
+    border-color: hsl(259, 100%, 65%);
+}
+
+.custom-input:focus{
+    border-color: hsl(259, 100%, 65%);
+}
+
+.custom-input.error {
     border-color: hsl(0, 100%, 67%);
 }
 .error-message {
