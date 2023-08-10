@@ -142,10 +142,10 @@ input[type="text"] {
 
 @font-face {
     font-family: 'Poppins';
-    src: url('/assets/fonts/Poppins-Bold.ttf') format('truetype'); /* Adjust the font file name and format if needed */
+    src: url('assets/fonts/Poppins-Bold.ttf') format('truetype'); /* Adjust the font file name and format if needed */
 }
 
 @font-face {
     font-family: 'PoppinsB';
-    src: url('/assets/fonts/Poppins-BoldItalic.ttf') format('truetype'); /* Adjust the font file name and format if needed */
+    src: url('assets/fonts/Poppins-BoldItalic.ttf') format('truetype'); /* Adjust the font file name and format if needed */
 }
