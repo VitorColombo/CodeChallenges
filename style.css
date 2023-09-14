@@ -167,3 +167,12 @@ footer {
   left: 0;
   bottom: -15px;
 }
+
+@media (min-width: 600px) {
+  :root {
+    --bg-url: url(assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(assets/bg-desktop-light.jpg);
+  }
+}
