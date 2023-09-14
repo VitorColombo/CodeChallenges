@@ -28,6 +28,7 @@ body {
   /*background: color image repeat position/size */
   background: var(--bg-url) no-repeat top center/cover;
   transition: background 0.5s ease; /* Add a transition for the background property */
+  height: 100vh;
 }
 
 body * {
