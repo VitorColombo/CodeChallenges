@@ -84,6 +84,7 @@ body * {
 }
 
 #switch button:hover {
+  transition: outline 0.3s ease;
   outline: 8px solid var(--highlight-color);
 }
 
