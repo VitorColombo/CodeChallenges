@@ -6,22 +6,22 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./assets/bg-mobile.jpg);
+  --bg-url: url(../assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgb(132, 2, 108, 0.01);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  --switch-br-url: url(assets/MoonStars.svg);
+  --switch-br-url: url(../assets/MoonStars.svg);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(../assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgb(132, 2, 108, 0.08);
   --highlight-color: rgba(0, 0, 0, 0.2);
-  --switch-br-url: url(assets/Sun.svg);
+  --switch-br-url: url(../assets/Sun.svg);
 }
 
 body {
@@ -166,9 +166,9 @@ footer {
 
 @media (min-width: 600px) {
   :root {
-    --bg-url: url(assets/bg-desktop.jpg);
+    --bg-url: url(../assets/bg-desktop.jpg);
   }
   .light {
-    --bg-url: url(assets/bg-desktop-light.jpg);
+    --bg-url: url(../assets/bg-desktop-light.jpg);
   }
 }
