@@ -83,6 +83,10 @@ body * {
   transition: background 0.3s ease, left 0.5s ease;
 }
 
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
+}
+
 .light #switch button.position-transition {
   left: 50%;
 }
