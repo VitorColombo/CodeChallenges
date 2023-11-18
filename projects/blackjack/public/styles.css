@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype"),
+    url("../fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+}
+
+#score {
+  margin-top: 0px;
+  color: black;
+}
+
+body {
+  font-family: "SpaceGrotesk", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/table.jpg");
+  background-size: 100% 500%;
+  background-size: cover;
+  color: rgb(230, 209, 171);
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 300px;
+  color: goldenrod;
+  text-align: center;
+  align-items: center;
+}
+
+#title-shadow {
+  color: black;
+  margin-top: 6rem;
+  margin-bottom: -6.3rem;
+  margin-right: 0.4rem;
+}
+
+#message-el {
+}
+.center {
+  display: grid;
+  grid-template-rows: 3rem;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  vertical-align: middle;
+}
+
+button {
+  align-items: center;
+  font-family: "SpaceGrotesk", sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+  margin-top: 0.7rem;
+  color: rgba(1, 103, 1, 0.729);
+  background-color: goldenrod;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+}
+
+#newcard-bt {
+  display: none;
+}
+#out-bt {
+  display: none;
+}
